@@ -82,7 +82,7 @@ app.intent('haveInterview',
 	  })
 	  .run({ autoFetch : true, maxFetch : 4000 }); // synonym of Query#execute();
 
-
+	  response.say("You have "+ query.totalFetched +  dateSpoken);
 
   // ...
 });
